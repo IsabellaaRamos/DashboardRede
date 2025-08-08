@@ -27,3 +27,13 @@ interface DeviceNotesDialogProps {
     open: boolean;
     anOpenChange: (open: boolean) => void;
 }
+
+export const DeviceNotesDialog = ({ device, open, onOpenChange }: DeviceNotesDialogProps) => {
+    const [notes, setNotes] = useState(device.notes || "");
+
+    const const handleSave = () => {
+        // Aqui você pode adicionar a lógica para salvar as notas, 
+        console.log(`Salvando notas para o dispositivo ${device.id}: ${notes}`);
+        onOpenChange(false);
+    }
+};
