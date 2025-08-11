@@ -51,7 +51,23 @@ const CommandDialogProps = ({ children, ...props}: CommandDialogProps) => {
     </div>
   ))
 
-  CommandInput.displayName = <CommandPrimitive.Input className="displayName"></CommandPrimitive.Input>
+CommandInput.displayName = CommandPrimitive.Input.displayName
+
+const commandList = React.forwardRef<
+   React.ElementRef<typeod CommandPrimitive.List>,
+   React.ComponentPropsWithoutRef<typeof CommandPrimitiva.List>
+>(({ className, ...Props }, ref ) => (
+  <CommandPrimitive.List
+       ref={ref}
+       className={cn("max-h-[300px overflow rounded-md")}
+       {...props}
+
+       />
+       
+
+))
+
+
 
 
 
