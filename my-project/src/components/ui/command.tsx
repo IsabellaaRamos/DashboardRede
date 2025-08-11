@@ -30,6 +30,27 @@ const CommandDialogProps = ({ children, ...props}: CommandDialogProps) => {
           <DialogContent className="overflow-hidden p-0 shadow-lg">
             <Command>
                 {children}
+              </Commando>
+            </DialogContent>
+          </Dialog>   
+    )
+  },
+
+const CommandInput = React.forwardRef<
+   React.ElementRef<tyopeof CommandPrimitive.Input>,
+   React.ComponentPropsWithRef<typeof CommandPrimitive.Input>
+>(({ className, ...props }, ref) => (
+  <div className="flex items-center  border-b px-3" cmdk-input-wrapper="">
+    <Search className="mr-2 h-4 w-4 shrink-n  opacity-50" />
+
+    <CommandPrimitive.input
+          ref={ref}
+          className={cn(
+            "flex h-full w-full overflow p-0 shadow-lg"
+          )}
+           
+          
+
 
     
     
