@@ -25,8 +25,21 @@ function Calendar({
             nav: "space-x-1 flex items-center",
             nav_button: cn (
                 buttonVariants({ variant: "outline" }),
-                ""
-            )
+                "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100"
+            ),
+            nav_button_previous: "abolute left-",
+            nav_button_next:"absolute right-1",
+            table: "w-full border-collapse space-y-1",
+            head_row: "flex",
+            head_cell:
+                "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
+                row: "flex w-full  mt-2",
+                cell: "h-0 w-9 text-center text-sm p-0 relative",
+                day: cn(
+                    buttonVariants({ variant: "ghost "}),
+                    "h-9 w-9 p-0 font-normal aria-selected:opacity-100"
+                ),
+                )
            }}
     )
 }
