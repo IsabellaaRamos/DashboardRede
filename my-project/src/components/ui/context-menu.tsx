@@ -12,3 +12,7 @@ const ContextMenuGroup = ContextMenuPrimitive.Group
 const ContextMenuPortal = ContextMenuPrimitive.Portal 
 
 const ContextMenuSub  = ContextMenuPrimitive.sub
+
+const ContexMenuRadioGroup = ContextMenuPrimitive.ContexMenuRadioGroup
+
+const ContextMenuTrigger = React.forwarfRef<
