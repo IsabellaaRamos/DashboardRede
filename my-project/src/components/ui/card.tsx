@@ -26,5 +26,23 @@ const CardHeader = React.forwardRef<
         className={cn("flex flex-col space-y-1.5 p-6", ClassName)}
       />
 ))
-CardHeader
+CardHeader.displayName = "CardHeader"
+
+const CardTitle = React.forwardRef<
+    HTMLHeadingElement,
+    React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
+    <h3
+        ref={ref}
+        ClassName={cn(
+            "text=2x1 font-semibold leading-none tracking-tight",
+            className
+        )}
+        {...props}
+        />
+)) 
+CardTitle.displayName = "CardTitle"´
+
+const CardDescription = React.forwardRef<
+    HTMLParagraphElement,
         )}
