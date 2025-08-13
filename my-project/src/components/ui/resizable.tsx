@@ -22,4 +22,19 @@ const ResizableHandle = ({
     withHandle,
     className,
     ...props
-}: React.ComponentProps<typeof ResizablePrimitive.
+}: React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> & {
+  withHandle?: boolean
+}) => (
+    <ResizablePrimitive.PanelResizeHandle
+       classNAme={cn(
+        "relative flex w-px items-center justify-center bg-border"
+        className
+       )}
+       {...props}
+    >
+    {withHandle && (
+        <div className="z-10 flex h-4 w-3 items-center justify-center"
+    )}
+)
+ 
+
