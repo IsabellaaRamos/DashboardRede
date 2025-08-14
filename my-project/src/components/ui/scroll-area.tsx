@@ -15,9 +15,21 @@ const ScrollArea = React.forwardRef<
         <ScrollAreaPrimitive.Viewport className="h-full w-full rounded-[inherit]">
             {children}
         </ScrollAreaPrimitive.Viewport>
-        
-
-
+        <ScrollBar />
+        <ScrollAreaPrimitive.Coner />
 
       </ScrollAreaPrimitive.Root>
 ))
+ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName
+
+const ScrollBar = React. forwardRef<
+     React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
+>(({ className, orientation = vertical}, ref) => (
+    {...props}
+))
+ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName
+  
+const ScrollBar = React.forwardRef<
+
+
+  
