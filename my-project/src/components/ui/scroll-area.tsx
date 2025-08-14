@@ -30,6 +30,10 @@ const ScrollBar = React. forwardRef<
 ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName
   
 const ScrollBar = React.forwardRef<
+     React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
+     (({ className, children, ...props }, ref) =>)(
+        
+     )
 
 
   
