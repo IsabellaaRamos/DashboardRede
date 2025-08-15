@@ -1,11 +1,17 @@
-import { useState, useEffect } from "react";
-import { Monitor, Wifi, AlertTriangle, Clock } from "lucide-react";
-import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
-import { StatusCard } from "@/components/dashboard/StatusCard";
-import { DeviceTable } from "@/components/dashboard/DeviceTable;";
-import { mockDevices, getDeviceStats } from "@/data/mockDevices";
+import { cn } from "@/lib/utils"
 
-const Index = () => {
-    const [ devices, setDevices ] = useState(mockDevices);
-    
+function Skeleton({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("animate-pulse rounded-md bg-muted", className)}
+      {...props}
+    />
+  )
 }
+
+export { Skeleton }
+
+
