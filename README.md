@@ -22,5 +22,9 @@ O objetivo é substituir planilhas manuais, oferecendo uma interface clara e din
 - Filtro por IP, MAC, nome e status
 - Interface responsiva para desktop e notebook
 - Possibilidade futura de alertas para novos dispositivos
+  
+<br>
+❗Importante❗<br>
+  - São dados simbolicos 
 
-
+<img width="1874" height="879" alt="image" src="https://github.com/user-attachments/assets/e8e209b9-0f67-43f9-aca6-d2d975a779a5" />
