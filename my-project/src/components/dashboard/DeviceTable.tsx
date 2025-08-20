@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MoreHorizontal, Edit3, Trash2, MessageSquare } from "lucide-react";
-import { Button } from "/components/ui/button";
-import { Badge } from "/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import {
   Table,
   TableBody,
@@ -9,7 +9,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "/components/ui/table";
+} from "@/components/ui/table";
 import {
   DropdownMenu,
   DropdownMenuContent,
