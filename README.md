@@ -1,4 +1,4 @@
-# Dashboard de Rede
+# 🛜Dashboard de Rede
 
 Um dashboard web para uso corporativo, desenvolvido para monitorar dispositivos conectados à rede.  
 O objetivo é substituir planilhas manuais, oferecendo uma interface clara e dinâmica para exibir:
